@@ -1,0 +1,82 @@
+/* base */
+body {
+  background: #1b1b32;
+  color: #fff;
+  font-family: Tahoma;
+}
+
+a {
+  color: #fff;
+}
+
+h1,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin: 0 auto;
+  width: 70vw;
+  max-width: 500px;
+  min-width: 300px;
+  color: #fff;
+}
+
+fieldset {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* page */
+.title {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.form-input {
+  min-height: 2rem;
+  margin-top: 10px;
+  width: 100%;
+  color: #fff;
+  background: #000;
+  border: none;
+}
+
+.form-input:not([type="radio"], [type="checkbox"]):focus {
+  border-radius: 4px;
+  outline: solid 1px orange;
+}
+
+button[type="submit"] {
+  display: block;
+  height: 32px;
+  width: 60%;
+  min-width: 300px;
+  margin: 18px auto;
+  color: white;
+  border-color: white;
+  background: #3b3b4f;
+}
+
+/* utils */
+.text-center {
+  text-align: center;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #fff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}

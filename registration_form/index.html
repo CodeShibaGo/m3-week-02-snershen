@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="text-center">
+      <h1 class="title">Registration Form</h1>
+      <p>Please fill out this form with the required information</p>
+    </div>
+    <form methods="post" action="https://register-demo.freecodecamp.org">
+      <fieldset class="border-bottom">
+        <label for="first-name"
+          >Enter Your First Name: <input class="form-input" type="text" id="first-name" name="first-name"
+        /></label>
+        <label for="last-name"
+          >Enter Your Last Name:<input class="form-input" type="text" id="last-name" name="last-name"
+        /></label>
+        <label for="email">Enter Your Email:<input class="form-input" type="email" id="email" name="email" /></label>
+        <label for="password"
+          >Create a New Password:<input
+            class="form-input"
+            type="password"
+            id="password"
+            name="password"
+            pattern="[a-z0-5]{8,}"
+        /></label>
+      </fieldset>
+      <fieldset class="border-bottom">
+        <legend>Account type (required)</legend>
+        <label for="personal"
+          ><input class="form-input inline" type="radio" id="personal" name="account-type" required />Personal</label
+        >
+        <label for="business"
+          ><input class="form-input inline" type="radio" id="business" name="account-type" />Business</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture"
+          >Upload a profile picture:<input class="form-input" type="file" id="profile-picture" name="file"
+        /></label>
+        <label for="age"
+          >Input your age (years):<input class="form-input" type="number" id="age" name="age" min="1" max="120"
+        /></label>
+        <label for="referer"
+          >How did you hear about us?
+          <select class="form-input" name="referer" id="referer">
+            <option selected>(select one)</option>
+            <option value="freeCodeCamp News">freeCodeCamp News</option>
+            <option value="freeCodeCamp YouTube Channel">freeCodeCamp YouTube Channel</option>
+            <option value="freeCodeCamp Forum">freeCodeCamp Forum</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label for="bio"
+          >Provide a bio:
+          <textarea class="form-input" id="bio" name="bio" rows="3" placeholder="I like coding on the beach"></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions"
+        ><input class="form-input inline" type="checkbox" id="terms-and-conditions" name="terms-and-conditions" />I
+        accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label
+      >
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </body>
+</html>
