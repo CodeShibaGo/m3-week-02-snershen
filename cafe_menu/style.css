@@ -1,0 +1,115 @@
+/* base */
+body,
+html,
+h1,
+h2,
+p,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  background-size: cover;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+hr {
+  height: 4px;
+  background-color: brown;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* page */
+main p {
+  font-size: 1.125rem;
+}
+
+.menu {
+  margin: 0 auto;
+  padding: 20px;
+  background: burlywood;
+  max-width: 500px;
+}
+
+.menu-header,
+.menu-content-header,
+.menu-footer {
+  text-align: center;
+}
+
+.menu-header {
+  padding-bottom: 16px;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.menu-content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.menu-content-title {
+  font-size: 1.875rem;
+}
+
+.list-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.list-item p {
+  display: inline-block;
+}
+
+.item-title {
+  width: 75%;
+}
+
+.item-price {
+  width: 23%;
+  text-align: right;
+}
+
+.menu-footer p,
+a {
+  font-size: 0.875rem;
+}
+
+.footer-link {
+  margin-bottom: 14px;
+}
+
+/* utils */
+
+.italic {
+  font-style: italic;
+}
