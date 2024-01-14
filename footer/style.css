@@ -1,0 +1,101 @@
+body,
+html,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #fa0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-image: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  padding: 100px 0;
+}
+
+.menu-item {
+  width: 25%;
+}
+
+.menu-item li {
+  padding: 4px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px;
+  border-right: solid 2px;
+  margin-right: 10px;
+  transform: rotate(45deg);
+}
+
+.menu-title {
+  border-bottom: dotted 1px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  background: #3c1c60;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subscription {
+  display: flex;
+  margin: auto 0;
+}
+
+.footer-subscription input {
+  width: 100%;
+  border: none;
+}
+
+.footer-subscription input:focus {
+  outline: none;
+}
+
+.footer-subscription button {
+  cursor: pointer;
+  text-wrap: nowrap;
+  border: none;
+  background: #3c1c60;
+  color: white;
+  padding: 6px 10px;
+}
