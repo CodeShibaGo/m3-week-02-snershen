@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fdf9e1;
+  width: 100%;
+  height: 100vh;
+}
+
+.cat-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 200px;
+}
+
+.cat-face {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  border-radius: 100% 100% 80% 80%;
+  background: linear-gradient(#ffbb2a 0%, #f49818 80%);
+}
+
+.cat-ear {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid #f49818;
+  position: absolute;
+  top: 0;
+}
+
+.cat-ear.left {
+  transform: rotate(-30deg);
+}
+
+.cat-ear.right {
+  right: 0px;
+  transform: rotate(30deg);
+}
+
+.cat-inner-ear {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #ca7908;
+  position: absolute;
+  z-index: 20;
+}
+
+.cat-inner-ear.left {
+  left: -20px;
+  top: 10px;
+}
+
+.cat-inner-ear.right {
+  right: -20px;
+  top: 10px;
+}
+
+.cat-eye {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.cat-eye-ball {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.cat-eye.left {
+  left: 60px;
+  top: 80px;
+}
+
+.cat-eye.right {
+  right: 60px;
+  top: 80px;
+}
+
+.cat-nose {
+  position: absolute;
+  border-top: 28px solid #000;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-radius: 30px;
+  top: 120px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cat-mouth {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 65px;
+}
+
+.cat-mouth-line {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  border: 3px solid #000;
+  border-radius: 0 0 150px 300%/190px;
+  border-color: transparent transparent black transparent;
+}
+
+.cat-mouth-line.left {
+  left: 23px;
+}
+
+.cat-whisker-line {
+  width: 40px;
+  height: 3px;
+  background: #000;
+  border-radius: 50px;
+}
+
+.cat-whisker-line:nth-child(1) {
+  margin-bottom: 10px;
+  rotate: 15deg;
+}
+
+.cat-whisker-line:nth-child(2) {
+  rotate: 0deg;
+  margin-bottom: 10px;
+}
+
+.cat-whisker-line:nth-child(3) {
+  rotate: -15deg;
+}
+
+.cat-whisker-group.left {
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  bottom: 50px;
+}
+
+.cat-whisker-group.right {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  bottom: 50px;
+  transform: scale(-1);
+}
+
+.cat-pattern {
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  display: flex;
+  gap: 10px;
+  z-index: 12;
+}
+
+.cat-patten-line {
+  border-radius: 20px;
+  display: block;
+  height: 40px;
+  width: 8px;
+  background: #f37609;
+}
