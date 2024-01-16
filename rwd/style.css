@@ -103,6 +103,12 @@ a {
   border-bottom: solid 1px;
 }
 
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
 .main-header .nav {
   display: flex;
   flex-direction: column;
@@ -111,8 +117,9 @@ a {
   top: 0;
   left: -120%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: 0.5s;
 }
 
@@ -232,6 +239,9 @@ a {
 
   .main-header .nav-link {
     padding: 20px;
+  }
+  .section-title {
+    font-size: 2.5rem;
   }
 
   .banner-section .title {
